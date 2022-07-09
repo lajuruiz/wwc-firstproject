@@ -31,6 +31,19 @@ main{
     flex-grow: 1;
 }
 
+h1{
+    text-transform: capitalize;
+}
+
+.title__important{
+    text-decoration: underline;
+    color:#FFB742
+}
+h4{
+    margin-top: 27px;
+    margin-bottom: 16px;
+}
+
 section{
     display: flex;
     margin: 10px;
@@ -39,15 +52,14 @@ section{
     width: 65%;
 }
 
-.box{
-    background-color: #292B2E;
-    justify-content: center;
-}
-
 nav{
     margin: 20px;
 }
 
+.header__list{
+    font-weight: bold;
+    color: white;
+}
 
 nav li{
     list-style: none;
@@ -72,21 +84,66 @@ button{
     margin: 20px;
     font-weight: 800;
     height: 50px;
-    width: 100px;
+    width: 187px;
     background-color:#FFB742;
     color: black;
     border-radius: 35px;
     top: 23.060546875px;
+    padding: 12px, 26px, 12px, 26px;
     left: 1271px;
+    border: none;
 }
+
+.button__menu{
+    width: 100px;
+}
+
+.box{
+    background-color: #292B2E;
+    justify-content: center;
+    height: 91px;
+    width: 313px;
+}
+
+.box__experience{
+    color: #FFB742;
+    font-weight: 700;
+    font-size: 18px;
+}
+
 
 .title{
     margin-top: 10px;
     margin-bottom: 10px;
 
 }
+
 footer{
-    background-color: #1c1c1c;
-    display:flex;
+    background-color: #1C1C1C;
+    display: flex;
     justify-content: space-between;
+    height: 214px;
+    margin-top: 115px;
+    padding: 34px;
+}
+
+
+.list_footer{
+    list-style: none;
+    color: #7B7B7B;
+    font-size:18px
+}
+
+p{
+    margin-left: 14px;
+    margin-top: 10px;
+    margin-right: 15px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.footer__boton{
+    background: #212529;
+    border-radius: 49px;
+    color: #7C7C7C;
 }

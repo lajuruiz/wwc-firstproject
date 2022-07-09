@@ -25,8 +25,17 @@ header{
     margin: 9px;
 }
 
+.header__list{
+    font-weight: bold;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
 main{
-    font-family: "Inter";
+    font-family: "Poppins";
     text-align: center;
     flex-grow: 1;
     display: flex;
@@ -37,6 +46,45 @@ main{
 main>form{
     display: flex;
     flex-direction: column;
+    gap:20px;
+}
+
+.form__main{
+    width: 300px;
+    min-width: fit-content;
+    margin: 0 auto;
+}
+
+
+::placeholder{
+    color: white
+}
+
+.form__main input{
+    width: 30%;
+    height: 35%;
+    margin-bottom: 5px;
+    padding: 0;
+    border: none;
+    font-weight: 700;
+}
+
+.form__main input[type=text] {
+    width: 370px;
+    background-color: #212529;
+    border-bottom: 2px solid #676767;
+    font-size: 20px;
+    font-family:'Poppins';
+    color: white;
+}
+
+.form__main input[type=number]{
+    width: 370px;
+    background-color: #212529;
+    border-bottom: 2px solid #676767;
+    font-size: 20px;
+    font-family:'Poppins';
+    color: white;
 }
 
 .buttom{
@@ -59,7 +107,7 @@ a{
 }
 
 a:visited, a:link{
-    color: white;
+    color:#FFFFFF;
 }
 
 a:hover{
@@ -68,7 +116,7 @@ a:hover{
 
 .contact{
     text-align: center;
-    margin: 20px;
+    margin: 35px;
     font-weight: 800;
     width: 160px;
     background: rgba(255, 255, 255, 0.08);
@@ -83,19 +131,85 @@ button{
     margin: 20px;
     font-weight: 800;
     height: 50px;
-    width: 100px;
+    width: 187px;
     background-color:#FFB742;
     color: black;
     border-radius: 35px;
     top: 23.060546875px;
+    padding: 12px, 26px, 12px, 26px;
     left: 1271px;
+    border: none;
 }
 
-form{
-    align-items: center;
+.button__menu{
+    width: 100px;
 }
+.button__main{
+    margin: 0;
+    width: 90px;
+    height: 85px;
+    background: #FFB742;
+    border: 2px solid #FFB742;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 footer{
-    background-color: #1c1c1c;
-    display:flex;
+    background-color: #1C1C1C;
+    display: flex;
     justify-content: space-between;
+    height: 214px;
+    margin-top: 115px;
+    padding: 34px;
+}
+
+.list_footer{
+    list-style: none;
+    color: #7B7B7B;
+    font-size:18px
+}
+
+p{
+    margin-left: 14px;
+    margin-top: 10px;
+    margin-right: 15px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.footer__email_input{
+    display: flex;
+    background: #212529;
+    border-radius: 50px;
+    color: #7C7C7C;
+    height: 40px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+
+.email_input__button{
+    margin: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.footer__email_input > input{
+    /* -10 px since we are adding a margin-left of 20 px therefoe 20/2 = 10*/
+    width: calc(100% - 40px - 10px);
+    margin-left: 20px;
+    height: 100%;
+    background: none;
+    color: #7B7B7B;
+    font-weight: 700;
+    line-height: 100%;
+    border: none;
+}
+
+.footer__email_input > input::placeholder{
+    color: #7B7B7B;
 }

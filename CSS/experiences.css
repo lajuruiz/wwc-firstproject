@@ -52,6 +52,11 @@ nav li{
     margin-left: 10px;
 }
 
+ul{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
 a{
     text-decoration: none;
 }
@@ -75,6 +80,10 @@ button{
     top: 23.060546875px;
     padding: 12px, 26px, 12px, 26px;
     left: 1271px;
+}
+
+.button__menu{
+    width: 100px;
 }
 
 footer{
