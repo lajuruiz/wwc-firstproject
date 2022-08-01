@@ -181,7 +181,7 @@ p{
     line-height: 100%;
 }
 
-.footer__email_input{
+.footer__email--input{
     display: flex;
     background: #212529;
     border-radius: 50px;
@@ -192,13 +192,13 @@ p{
 }
 
 
-.email_input__button{
+/* .email__input--button{
     margin: 0;
     width: 40px;
     height: 40px;
-}
+} */
 
-.footer__email_input > input{
+.footer__email--input > input{
     /* -10 px since we are adding a margin-left of 20 px therefoe 20/2 = 10*/
     width: calc(100% - 40px - 10px);
     margin-left: 20px;

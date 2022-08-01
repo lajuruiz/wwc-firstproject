@@ -44,14 +44,6 @@ h4{
     margin-bottom: 16px;
 }
 
-section{
-    display: flex;
-    margin: 10px;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 65%;
-}
-
 nav{
     margin: 20px;
 }
@@ -97,18 +89,59 @@ button{
 .button__menu{
     width: 100px;
 }
+section{
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 10px;
+}
 
 .box{
     background-color: #292B2E;
-    justify-content: center;
-    height: 91px;
-    width: 313px;
+    justify-content: space-between;
+    height: 105px;
+    width: 450px;
+    display: flex;
+    font-family: 'Inter';
+    border-radius: 8px;
+    margin: 0 20px 0 20px;
+}
+
+.box__image--one{
+    width: 90px;
+    height: 70px;
+    margin:20px
+}
+
+.box__image--two{
+    width: 90px;
+    height: 70px;
+    margin:20px
+}
+
+.box__image__three{
+    width: 90px;
+    height: 70px;
+    margin:20px
 }
 
 .box__experience{
     color: #FFB742;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 28px;
+}
+
+.box__experience--home{
+    margin: 20px 75px;
+    display: block;
+    text-align: center;
+}
+
+.box__text{
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
 
@@ -117,7 +150,6 @@ button{
     margin-bottom: 10px;
 
 }
-
 footer{
     background-color: #1C1C1C;
     display: flex;
@@ -126,7 +158,6 @@ footer{
     margin-top: 115px;
     padding: 34px;
 }
-
 
 .list_footer{
     list-style: none;
@@ -142,8 +173,39 @@ p{
     line-height: 100%;
 }
 
-.footer__boton{
+.footer__email--input{
+    display: flex;
     background: #212529;
-    border-radius: 49px;
+    border-radius: 50px;
     color: #7C7C7C;
+    height: 40px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+
+.email__input--button{
+    margin: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.footer__email--input > input{
+    /* -10 px since we are adding a margin-left of 20 px therefoe 20/2 = 10*/
+    width: calc(100% - 40px - 10px);
+    margin-left: 20px;
+    height: 100%;
+    background: none;
+    color: #7B7B7B;
+    font-weight: 700;
+    line-height: 100%;
+    border: none;
+}
+
+.footer__email_input > input::placeholder{
+    color: #7B7B7B;
+}
+
+input{
+    outline: none;
 }
