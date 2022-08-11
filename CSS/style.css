@@ -25,6 +25,11 @@ header{
     margin: 9px;
 }
 
+.image-header{
+    min-width: 91px;
+    max-height: 90px;
+}
+
 main{
     font-family: "Inter";
     text-align: center;
@@ -88,13 +93,15 @@ button{
 
 .button__menu{
     width: 100px;
+    min-width: 53px;
 }
+
 section{
     display: flex;
-    margin: 10px;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -106,7 +113,7 @@ section{
     display: flex;
     font-family: 'Inter';
     border-radius: 8px;
-    margin: 0 20px 0 20px;
+    margin: 20px;
 }
 
 .box__image--one{
@@ -150,6 +157,7 @@ section{
     margin-bottom: 10px;
 
 }
+
 footer{
     background-color: #1C1C1C;
     display: flex;
@@ -157,6 +165,7 @@ footer{
     height: 214px;
     margin-top: 115px;
     padding: 34px;
+    width: 100%;
 }
 
 .list_footer{
@@ -165,10 +174,7 @@ footer{
     font-size:18px
 }
 
-p{
-    margin-left: 14px;
-    margin-top: 10px;
-    margin-right: 15px;
+p {
     font-weight: 700;
     line-height: 100%;
 }
@@ -209,3 +215,16 @@ p{
 input{
     outline: none;
 }
+
+@media (max-width:640px){
+    footer {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    footer>*{
+        margin-bottom: 15px;
+    }
+
+}
+
