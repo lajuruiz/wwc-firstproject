@@ -1,85 +1,20 @@
-html{
-    height: 100%;
+
+:root {
+    /*Dark variables*/
+    --main-dark-bg-color: #212529;
+    --main-dark-color: #FFFFFF;
+    --main-dark-bg-color-gray:#292B2E;
+
+    /* general */
+    --main-bg-color: #FFFFFF;
+    --main-color: #212529;
+    --main-active-color: #FFB742;
 }
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* sobreescribo las variables cuando el active este en modo dark */
+:root.dark {
+    --main-bg-color: var(--main-dark-bg-color);
+    --main-color: var(--main-dark-color);
 }
-
-body{
-    background-color:#212529;
-    font-family:'Poppins';
-    color: white;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    max-height: 100%;
-}
-
-
-header{
-    display: flex;
-    justify-content: space-between;
-    margin: 9px;
-}
-
-.image-header{
-    min-width: 91px;
-    max-height: 90px;
-}
-
-
-nav{
-    margin: 20px;
-}
-
-
-nav li{
-    list-style: none;
-    display: inline;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-a{
-    text-decoration: none;
-}
-
-a:visited, a:link{
-    color: white;
-}
-
-a:hover{
-    color:#FFB742
-}
-
-.header__list{
-    font-weight: bold;
-    color: white;
-}
-
-button{
-    margin: 20px;
-    font-weight: 800;
-    height: 50px;
-    width: 187px;
-    background-color:#FFB742;
-    color: black;
-    border-radius: 35px;
-    top: 23.060546875px;
-    padding: 12px, 26px, 12px, 26px;
-    left: 1271px;
-    border: none;
-}
-
-.button__menu{
-    width: 100px;
-    min-width: 53px;
-}
-
 
 main{
     flex-wrap: wrap;
@@ -87,6 +22,14 @@ main{
     display: flex;
     margin: 0 auto;
     width: 73%;
+}
+
+header a:visited, a:link{
+    color: var(--main-color);
+}
+
+header a:hover{
+    color: var(--main-active-color);
 }
 
 .div-main {
@@ -101,12 +44,13 @@ main{
 }
 
 .whoIam{
-    background: rgba(255, 255, 255, 0.08);
+    background-color:#7B7B7B;
     border-radius: 50px;
-    color: #FFB742;
+    color: var(--main-active-color);
     width: 98px;
     height: 30px;
 }
+
 h1{
     margin-left: 17px;
     font-family: 'Roboto';
@@ -118,64 +62,6 @@ h1{
     line-height: 30px;
 }
 
-
-footer{
-    background-color: #1C1C1C;
-    display: flex;
-    justify-content: space-between;
-    height: 214px;
-    margin-top: 115px;
-    padding: 34px;
-    width: 100%;
-}
-
-.list_footer{
-    list-style: none;
-    color: #7B7B7B;
-    font-size:18px
-}
-
-p {
-    font-weight: 700;
-    line-height: 100%;
-}
-
-.footer__email--input{
-    display: flex;
-    background: #212529;
-    border-radius: 50px;
-    color: #7C7C7C;
-    height: 40px;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-
-.email__input--button{
-    margin: 0;
-    width: 40px;
-    height: 40px;
-}
-
-.footer__email--input > input{
-    /* -10 px since we are adding a margin-left of 20 px therefoe 20/2 = 10*/
-    width: calc(100% - 40px - 10px);
-    margin-left: 20px;
-    height: 100%;
-    background: none;
-    color: #7B7B7B;
-    font-weight: 700;
-    line-height: 100%;
-    border: none;
-}
-
-.footer__email_input > input::placeholder{
-    color: #7B7B7B;
-}
-
-input{
-    outline: none;
-}
 
 @media (max-width:640px){
     footer {

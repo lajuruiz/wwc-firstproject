@@ -231,3 +231,65 @@ p{
 
 }
 
+/* #contact-me{
+    display: flex;
+    justify-content: center;
+} */
+
+#main h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.button-smile{
+    background: rgba(255, 255, 255, 0.08);
+    color: #FFB742;
+    font-size: 16px;
+}
+
+.box-chiste{
+    width:400px/* fit-content(350px) */;
+    height: 300px;
+    background-color: aliceblue;
+    display: flex;
+    align-self: center;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+#chiste{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+    font-family: 'Poppins';
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+#respuesta{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+    font-family: 'Poppins';
+    padding: 10px;
+    word-wrap: break-word;
+    /* word-wrap: break-word; Permita que las palabras largas puedan dividirse y pasar a la siguiente línea */
+}
+
+.button-chiste{
+    display: flex;
+    justify-content: center;
+    margin-left: 169px;
+    margin-top:30px;
+
+}
+
+#oneMore{
+    cursor: pointer;
+}
+
