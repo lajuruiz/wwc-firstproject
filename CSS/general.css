@@ -1,4 +1,3 @@
-
 :root {
     /*Dark variables*/
     --main-dark-bg-color: #212529;
@@ -48,11 +47,6 @@ header{
     max-height: 90px;
 }
 
-
-.header__list{
-    font-weight: bold;
-    color: var(--main-bg-color);
-}
 nav{
     margin-top: 20px;
 }
@@ -80,19 +74,34 @@ a:hover{
     color:#FFB742
 }
 
+.header__list{
+    font-weight: bold;
+    color: var(--main-bg-color);
+}
+
+header a:visited, a:link{
+    color: var(--main-color);
+}
+
+header a:hover{
+    color: var(--main-active-color);
+}
+
 button{
     margin: 20px;
     font-weight: 800;
     height: 50px;
     width: 187px;
-    background-color:#FFB742;
+    background-color:var(--main-active-color);
     color: black;
     border-radius: 35px;
     top: 23.060546875px;
     padding: 12px, 26px, 12px, 26px;
     left: 1271px;
     border: none;
+    cursor: pointer;
 }
+
 
 #button-change:active{
     transform: scale(0.98);
@@ -109,20 +118,20 @@ footer{
     width: 100%;
 }
 
-.hire{
-    list-style: none;
-    color: #7B7B7B;
-    font-size:20px
-}
-
-.list-footer{
-    list-style: none;
-    font-size: 18px;
+.info-text{
+    font-size: 16px;
+    font-family: 'work Sans';
+    color: #D4D4D4;
 }
 
 p {
     font-weight: 700;
     line-height: 100%;
+}
+
+.list-footer{
+    list-style: none;
+    font-size: 18px;
 }
 
 .a-color:link, .a-color:visited {
@@ -133,7 +142,14 @@ p {
     color: white;
 }
 
-.footer__email--input{
+.hire{
+    list-style: none;
+    color: #7B7B7B;
+    font-size:20px
+}
+
+
+.footer-email-input{
     display: flex;
     background: #212529;
     border-radius: 50px;
@@ -143,14 +159,7 @@ p {
     margin-top: 20px;
 }
 
-
-.email__input--button{
-    margin: 0;
-    width: 40px;
-    height: 40px;
-}
-
-.footer__email--input > input{
+.footer-email-input > input{
     /* -10 px since we are adding a margin-left of 20 px therefoe 20/2 = 10*/
     width: calc(100% - 40px - 10px);
     margin-left: 20px;
@@ -162,13 +171,7 @@ p {
     border: none;
 }
 
-.info-text{
-    font-size: 16px;
-    font-family: 'work Sans';
-    color: #D4D4D4;
-}
-
-.footer__email_input > input::placeholder{
+.footer-email-input> input::placeholder{
     color: #7B7B7B;
 }
 
@@ -211,5 +214,3 @@ input{
     }
 
 }
-
-

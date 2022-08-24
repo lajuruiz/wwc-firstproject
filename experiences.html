@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:wght@100&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/general.css">
     <link rel="stylesheet" href="./CSS/experiences.css">
     <title>Laura Juliana Ruiz</title>
 </head>
@@ -15,13 +16,13 @@
         <img class="image-header" src="./img/Frame 7.png" alt="">
         <nav>
             <ul class="header__list">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./aboutme.html">About</a></li>
-                    <li><a href="./experiences.html">Experiences</a></li>
-                    <li><a href="./contactme.html">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutme.html">About</a></li>
+                <li><a href="./experiences.html">Experiences</a></li>
+                <li><a href="./contactme.html">Contact</a></li>
             </ul>
         </nav>
-        <button class="button__menu"> Change Mode</button>
+        <button id="button-change"> Change Mode</button>
     </header>
 
     <main>
@@ -66,37 +67,37 @@
         </section>
     </main>
     
-<footer>
-    <div>
-        <p> <span style=color:#FFB742> Laura Juliana Ruiz </span> </p>
-        <p>Industrial Chemestry And Dev Student </p>
-    </div>
-    <div>
-        <h2> Useful Links </h2>
-        <ul class="list_footer">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./aboutme.html">About</a></li>
-            <li><a href="./experiences.html">Experience</a></li>
-            <li><a href="./contactme.html">Contact</a></li>
-        </ul>
-    </div>
-    <div>
-        <h2> Social media</h2>
-        <ul class="list_footer">
-            <li> <a href="./index.html">linkedin</a></li>
-            <li> <a href="./index.html">Github</a>  </li>
-            <li> <a href="./index.html">Instagram</a></li>
-        </ul>
-    </div>
-    <div class="list_footer">
-        <p> <span style=color:#F5FBF2 > Hire me  </span></p>
-        <p> Enter your email to get my portafolio CV.</p>
-        <div class="footer__email--input">
-            <input type="email" placeholder="Your email address">
-           <!--  <button class="email__input--button"></button> -->
-           <img src="./img/icon.png" alt="">
+    <footer>
+        <div class="info-principle">
+            <p> <span style=color:#FFB742> Laura Juliana Ruiz </span> </p>
+            <p class="info-text">Industrial Chemestry And Dev Student </p>
         </div>
-    </div>
-</footer>
+        <div id="link-a">
+            <h2> Useful Links </h2>
+            <ul class="list-footer">
+                <li><a class="a-color" href="./index.html">Home</a></li>
+                <li><a class="a-color" href="./aboutme.html">About</a></li>
+                <li><a class="a-color" href="./experiences.html">Experience</a></li>
+                <li><a class="a-color" href="./contactme.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="link-a-social">
+            <h2> Social media</h2>
+            <ul class="list-footer">
+                <li> <a class="a-color" href="./index.html">linkedin</a></li>
+                <li> <a class="a-color" href="./index.html">Github</a>  </li>
+                <li> <a class="a-color" href="./index.html">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="hire">
+            <p> <span style=color:#F5FBF2 > Hire me  </span></p>
+            <p> Enter your email to get my portafolio CV.</p>
+            <div class="footer-email-input">
+                <input type="email" placeholder="Your email address">
+                <img src="./img/icon.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="./javascript/index.js"></script>
 </body>
 </html>

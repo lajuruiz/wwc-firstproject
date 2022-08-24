@@ -1,43 +1,85 @@
-html{
-    height: 100%;
+:root {
+    /*Dark variables*/
+    --main-dark-bg-color: #212529;
+    --main-dark-color: #FFFFFF;
+    --main-dark-bg-color-gray:#7B7B7B;
+
+    /* general */
+    --main-bg-color: #FFFFFF;
+    --main-color: #212529;
+    --main-active-color: #FFB742;
+    --main-dark-bg:#292B2E;
+}
+/* sobreescribo las variables cuando el active este en modo dark */
+:root.dark {
+    --main-bg-color: var(--main-dark-bg-color);
+    --main-color: var(--main-dark-color);
+    --main-dark-bg:var(--main-dark-bg-color-gray);
 }
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body{
-    background-color:#212529;
-    font-family:'Poppins';
-    color: white;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    max-height: 100%;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    margin: 9px;
-}
-
-.image-header{
-    min-width: 91px;
-    max-height: 90px;
-}
-
-.header__list{
-    font-weight: bold;
-    color: white;
-}
 
 input:focus {
     outline: none;
 }
+
+.button-smile{
+    background:  var(--main-dark-bg-color-gray);
+    color: var(--main-active-color);
+    font-size: 16px;
+}
+.text-phrase{
+    margin-bottom: 20px;
+}
+
+main h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.box-chiste{
+    width:450px;/* fit-content(380px); */
+    height: 350px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+#chiste{
+    display: flex;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-family: 'Poppins';
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+#respuesta{
+    display: flex;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-family: 'Poppins';
+    padding: 10px;
+    word-wrap: break-word;
+    /* word-wrap: break-word; Permita que las palabras largas puedan dividirse y pasar a la siguiente línea */
+}
+
+.button-chiste{
+    display: flex;
+    justify-content: center;
+    margin-left: 169px;
+    margin-top:30px;
+
+}
+
+#onemore{
+    cursor: pointer;
+}
+
 
 main{
     font-family: "Poppins";
@@ -47,6 +89,7 @@ main{
     flex-direction: column;
     text-align: center;
 }
+
 
 main>form{
     display: flex;
@@ -92,63 +135,17 @@ main>form{
     color: white;
 }
 
-.buttom{
-    display: flex;
-}
-
-nav{
-    margin: 20px;
-}
-
-nav li{
-    list-style: none;
-    display: inline;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-a{
-    text-decoration: none;
-}
-
-a:visited, a:link{
-    color:#FFFFFF;
-}
-
-a:hover{
-    color:#FFB742
-}
-
 .contact{
     text-align: center;
     margin: 35px;
     font-weight: 800;
     width: 160px;
-    background: rgba(255, 255, 255, 0.08);
+    background:var(--main-dark-bg-color-gray);
     color: #FFB742;
     border-radius: 35px;
     top: 23.060546875px;
     padding: 12px, 26px, 12px, 26px;
     left: 1271px;
-}
-
-button{
-    margin: 20px;
-    font-weight: 800;
-    height: 50px;
-    width: 187px;
-    background-color:#FFB742;
-    color: black;
-    border-radius: 35px;
-    top: 23.060546875px;
-    padding: 12px, 26px, 12px, 26px;
-    left: 1271px;
-    border: none;
-}
-
-.button__menu{
-    width: 100px;
-    min-width: 53px;
 }
 
 .button__main{
@@ -163,62 +160,6 @@ button{
     justify-content: center;
 }
 
-
-
-footer{
-    background-color: #1C1C1C;
-    display: flex;
-    justify-content: space-between;
-    height: 214px;
-    margin-top: 115px;
-    padding: 34px;
-    width: 100%;
-}
-
-.list_footer{
-    list-style: none;
-    color: #7B7B7B;
-    font-size:18px
-}
-
-p{
-    font-weight: 700;
-    line-height: 100%;
-}
-
-.footer__email--input{
-    display: flex;
-    background: #212529;
-    border-radius: 50px;
-    color: #7C7C7C;
-    height: 40px;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-
-/* .email__input--button{
-    margin: 0;
-    width: 40px;
-    height: 40px;
-} */
-
-.footer__email--input > input{
-    /* -10 px since we are adding a margin-left of 20 px therefoe 20/2 = 10*/
-    width: calc(100% - 40px - 10px);
-    margin-left: 20px;
-    height: 100%;
-    background: none;
-    color: #7B7B7B;
-    font-weight: 700;
-    line-height: 100%;
-    border: none;
-}
-
-.footer__email_input > input::placeholder{
-    color: #7B7B7B;
-}
-
 @media (max-width:640px){
     footer {
         flex-direction: column;
@@ -231,65 +172,4 @@ p{
 
 }
 
-/* #contact-me{
-    display: flex;
-    justify-content: center;
-} */
-
-#main h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.button-smile{
-    background: rgba(255, 255, 255, 0.08);
-    color: #FFB742;
-    font-size: 16px;
-}
-
-.box-chiste{
-    width:400px/* fit-content(350px) */;
-    height: 300px;
-    background-color: aliceblue;
-    display: flex;
-    align-self: center;
-    border-radius: 12px;
-    margin: 0 auto;
-}
-
-#chiste{
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-size: 18px;
-    font-family: 'Poppins';
-    padding: 10px;
-    word-wrap: break-word;
-}
-
-#respuesta{
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-size: 18px;
-    font-family: 'Poppins';
-    padding: 10px;
-    word-wrap: break-word;
-    /* word-wrap: break-word; Permita que las palabras largas puedan dividirse y pasar a la siguiente línea */
-}
-
-.button-chiste{
-    display: flex;
-    justify-content: center;
-    margin-left: 169px;
-    margin-top:30px;
-
-}
-
-#oneMore{
-    cursor: pointer;
-}
 

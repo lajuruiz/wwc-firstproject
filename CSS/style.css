@@ -1,4 +1,3 @@
-
 :root {
     /*Dark variables*/
     --main-dark-bg-color: #212529;
@@ -39,30 +38,6 @@ h1{
     margin-bottom: 30px;
 }
 
-header a:visited, a:link{
-    color: var(--main-color);
-}
-
-header a:hover{
-    color: var(--main-active-color);
-}
-
-button{
-    margin: 20px;
-    font-weight: 800;
-    height: 50px;
-    width: 187px;
-    background-color:var(--main-active-color);
-    color: black;
-    border-radius: 35px;
-    top: 23.060546875px;
-    padding: 12px, 26px, 12px, 26px;
-    left: 1271px;
-    border: none;
-    cursor: pointer;
-}
-
-
 #box-experiences{
     display: flex;
     justify-content: space-around;
@@ -102,16 +77,16 @@ button{
     margin:20px
 }
 
-.box__experience{
-    color: var(--main-active-color);
-    font-weight: 700;
-    font-size: 28px;
-}
-
 .box__experience--home{
     margin: 20px 75px;
     display: block;
     text-align: center;
+}
+
+.box__experience{
+    color: var(--main-active-color);
+    font-weight: 700;
+    font-size: 28px;
 }
 
 .letters{
