@@ -55,7 +55,7 @@ section{
 .box-general{
     width:360px;
     height: 385px;
-    background-color:var(--main-color);
+    background-color: var(--secundary-bg-color);
     margin-right:60px ;
     border-radius: 20px;
     margin: 10px;
@@ -74,13 +74,13 @@ section{
 
 .box-experience-information h3{
     margin-bottom: 10px;
-    color: var(--main-bg-color);
+    color: var(--main-color);
     font-weight: bold;
     
 }
 
 .box-experience-information span{
-    color:var(--main-bg-color);
+    color:var(--main-color);
 }
 
 .box-experience img{
@@ -89,7 +89,7 @@ section{
 .information{
     text-align: initial;
     margin: 20px 10px 20px 10px;
-    color:var(--main-bg-color);
+    color:var(--main-color);
 }
 
 @media (max-width:640px){

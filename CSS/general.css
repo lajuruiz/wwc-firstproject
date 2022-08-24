@@ -2,15 +2,18 @@
     /*Dark variables*/
     --main-dark-bg-color: #212529;
     --main-dark-color: #FFFFFF;
+    --main-dark-bg-color-gray:#292B2E;
 
     /* general */
     --main-bg-color: #FFFFFF;
     --main-color: #212529;
     --main-active-color: #FFB742;
+    --secundary-bg-color: aliceblue;
 }
 /* sobreescribo las variables cuando el active este en modo dark */
 :root.dark {
     --main-bg-color: var(--main-dark-bg-color);
+    --secundary-bg-color: var(--main-dark-bg-color-gray);
     --main-color: var(--main-dark-color);
 }
 
